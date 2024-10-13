@@ -6,11 +6,11 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:09:22 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 14:08:18 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/13 15:42:53 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> 
+#include <stdlib.h>
 // #ifndef NULL
 // #define NULL ((void *)0)
 // #endif

@@ -1,35 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 16:04:07 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 15:43:05 by dshvydka         ###   ########.fr       */
+/*   Created: 2024/10/13 14:02:26 by dshvydka          #+#    #+#             */
+/*   Updated: 2024/10/13 15:42:13 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strrchr(const char *str, int chr)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char	ch;
-	char	*last;
+	unsigned char	*p;
+	unsigned long	i;
 
-	last = NULL;
-	ch = (char)chr;
-	while (*str)
+	p = (unsigned char *)b;
+	i = 0;
+	while (i < len)
 	{
-		if (*str == ch)
-		{
-			last = (char *)str;
-		}
-		str++;
+		p[i] = (unsigned char)c;
+		i++;
 	}
-	if (*str == ch)
-	{
-		return ((char *)str);
-	}
-	return (last);
+	return (b);
 }
+
+// int main() {
+//     char buffer[10];
+//     ft_memset(buffer, 65, sizeof(buffer));
+//     for (int i = 0; i < sizeof(buffer); i++) {
+//         printf("%c ", buffer[i]);
+//     }
+
+//     return 0;
+// }

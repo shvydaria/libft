@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 16:04:07 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 15:43:05 by dshvydka         ###   ########.fr       */
+/*   Created: 2024/10/13 15:07:23 by dshvydka          #+#    #+#             */
+/*   Updated: 2024/10/13 15:40:19 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-char	*ft_strrchr(const char *str, int chr)
+int	ft_atoi(char *str)
 {
-	char	ch;
-	char	*last;
+	int	i;
+	int	minus_counter;
+	int	result;
 
-	last = NULL;
-	ch = (char)chr;
-	while (*str)
+	i = 0;
+	result = 0;
+	minus_counter = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
-		if (*str == ch)
-		{
-			last = (char *)str;
-		}
-		str++;
+		if (str[i] == '-')
+			minus_counter++;
+		i++;
 	}
-	if (*str == ch)
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		return ((char *)str);
+		result = result * 10 + (str[i] - '0');
+		i++;
 	}
-	return (last);
+	if (minus_counter % 2 == 0)
+		return (result);
+	else
+		return (-result);
 }

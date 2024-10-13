@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 16:04:07 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 15:43:05 by dshvydka         ###   ########.fr       */
+/*   Created: 2024/10/13 14:02:29 by dshvydka          #+#    #+#             */
+/*   Updated: 2024/10/13 15:43:20 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strrchr(const char *str, int chr)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	char	ch;
-	char	*last;
 
-	last = NULL;
-	ch = (char)chr;
-	while (*str)
-	{
-		if (*str == ch)
-		{
-			last = (char *)str;
-		}
-		str++;
-	}
-	if (*str == ch)
-	{
-		return ((char *)str);
-	}
-	return (last);
 }
