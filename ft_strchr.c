@@ -6,11 +6,11 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:03:34 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/11 17:34:25 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/13 14:08:47 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h> 
+#include <stdio.h> 
 
 char	*ft_strchr(const char *str, int chr)
 {
