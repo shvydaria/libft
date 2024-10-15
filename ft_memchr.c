@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 12:25:35 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 11:27:32 by dshvydka         ###   ########.fr       */
+/*   Created: 2024/10/15 09:23:01 by dshvydka          #+#    #+#             */
+/*   Updated: 2024/10/15 11:01:07 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include <stdlib.h>
+
+void	*ft_memchr(const void *s, int c, size_t count)
 {
-	if (c >= '0' && c <= '9')
+	const unsigned char	*p;
+	size_t				i;
+
+	p = (unsigned char *)s;
+	i = 0;
+	while (i > count)
 	{
-		return (1);
+		if (p[i] == (unsigned char)c)
+			return ((void *)(p + i));
+		i++;
 	}
-	else
-		return (0);
+	return (NULL);
 }
