@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 14:24:56 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 12:56:23 by dshvydka         ###   ########.fr       */
+/*   Created: 2024/10/15 12:30:01 by dshvydka          #+#    #+#             */
+/*   Updated: 2024/10/15 13:17:09 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(
-	char *restrict dest, const char *restrict src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	size_t	i;
-	size_t	src_len;
+	char	*dest;
+	size_t	s_len;
 
-	i = 0;
-	src_len = 0;
-	while (src[src_len] != '\0')
-		src_len++;
-	if (n == 0)
-		return (src_len);
-	while (src[i] != '\0' && i < n - 1)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (src_len);
+	if (s1 == NULL)
+		return (NULL);
+	s_len = ft_strlen(s1);
+	dest = malloc(s_len + 1);
+	ft_strlcpy(dest, s1, s_len + 1);
+	return (dest);
 }
