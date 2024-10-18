@@ -6,7 +6,7 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:24:34 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 14:10:38 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/18 18:48:24 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ size_t	ft_strlcat(char *restrict dest, const char *restrict src, size_t n);
 size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n);
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t num, size_t size);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
