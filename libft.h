@@ -6,7 +6,7 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:24:34 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/19 17:10:56 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:10:49 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
