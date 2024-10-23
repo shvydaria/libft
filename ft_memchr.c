@@ -6,11 +6,11 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:23:01 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 11:01:07 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:42:49 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t count)
 {

@@ -6,13 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:22:52 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 10:59:42 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:55:46 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*ft_memcmp(void *s1, void *s2, size_t size)
+int	ft_memcmp(void *s1, void *s2, size_t size)
 {
 	unsigned char	*p1;
 	unsigned char	*p2;
