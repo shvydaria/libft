@@ -6,14 +6,15 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:45:35 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/10 13:56:15 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:20:31 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// checks for an alphanumeric character
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0'
+			&& c <= '9'))
 	{
 		return (1);
 	}

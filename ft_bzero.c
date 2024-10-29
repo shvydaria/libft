@@ -6,12 +6,14 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:53:11 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/23 16:51:01 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:16:07 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// erases the data in the n bytes of the memory
+// writing zeros to the area, where pointing s
 void	ft_bzero(void *s, size_t n)
 {
 	char	*p;

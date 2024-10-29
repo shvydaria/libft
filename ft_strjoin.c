@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 14:40:24 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/18 18:48:03 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:59:25 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates and returns a concat of s1&s2 as a new string
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*s;

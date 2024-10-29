@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:02:29 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/29 12:41:09 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:39:25 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// copy a block of mem w/o overlap
 void	*ft_memcpy(void *dest, const void *src, size_t count)
 {
 	unsigned char		*d;

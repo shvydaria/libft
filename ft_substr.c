@@ -6,12 +6,14 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 17:26:49 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/29 14:39:56 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:13:29 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates and returns a substring from s,
+// that begins at index start and of maximum size len
 char	*ft_empty_substr(void)
 {
 	char	*substr;

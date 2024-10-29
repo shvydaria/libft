@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 12:30:01 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/25 18:29:29 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:57:38 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// not dumb, but dup -> duplicates the string, allocates mem for new str
 char	*ft_strdup(const char *s1)
 {
 	char	*dest;

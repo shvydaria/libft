@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:23:10 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 11:38:45 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:39:49 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// copy a block of mem from one to another location
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;

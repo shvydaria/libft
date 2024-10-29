@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:09:22 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 11:33:16 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:08:12 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
+// locates the fist occurrence of the \0 needle in the haystack
 char	*ft_strnstr(char *haystack, char *needle, unsigned int size)
 {
 	unsigned int	i;
@@ -23,8 +24,8 @@ char	*ft_strnstr(char *haystack, char *needle, unsigned int size)
 	while (haystack[i] != '\0' && i < size)
 	{
 		j = 0;
-		while (haystack[i + j] == needle[j]
-			&& (i + j) < size && needle[j] != '\0')
+		while (haystack[i + j] == needle[j] && (i + j) < size
+			&& needle[j] != '\0')
 		{
 			j++;
 		}

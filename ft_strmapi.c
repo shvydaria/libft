@@ -6,12 +6,14 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 17:15:34 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/19 17:56:38 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:10:09 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// applies the f to each char of string
+// to create a new string (using malloc)
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t			len;

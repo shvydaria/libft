@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 16:56:45 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/19 17:05:50 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:54:35 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// outputs the int to the given fd
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	c;

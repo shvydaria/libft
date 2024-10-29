@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:38:20 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/29 12:42:21 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:10:29 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//  compares the first (at most) n bytes of the two strings s1 and s2
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;

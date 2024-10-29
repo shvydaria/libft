@@ -6,12 +6,15 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:28:56 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/29 13:58:33 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:26:03 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates with malloc and returns a string representing the integer
+// iterate through tab, spaces, etc. 9-13||32
+// handle minus counter; convert digits(chars) to integers
 static int	get_num_len(long num)
 {
 	int	len;

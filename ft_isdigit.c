@@ -6,10 +6,11 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 12:25:35 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/15 11:27:32 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:22:06 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// checks for a digits (0-9)
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

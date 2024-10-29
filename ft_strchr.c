@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:03:34 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/19 17:40:07 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:50:49 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// finds 1st occurrence of the character c in the string s
 char	*ft_strchr(const char *str, int chr)
 {
 	char	ch;

@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:02:26 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 15:42:13 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:40:34 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
+// set a block of mem to a spec value
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;
@@ -34,5 +35,5 @@ void	*ft_memset(void *b, int c, size_t len)
 //         printf("%c ", buffer[i]);
 //     }
 
-//     return 0;
+//     return (0);
 // }

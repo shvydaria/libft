@@ -6,12 +6,13 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:22:52 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/23 16:55:46 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:38:00 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
+// compares 2 blocks of mem, byte by byte
 int	ft_memcmp(void *s1, void *s2, size_t size)
 {
 	unsigned char	*p1;

@@ -6,10 +6,11 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 13:57:53 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/10 14:05:00 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:46:08 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// make big small
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
