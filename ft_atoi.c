@@ -6,34 +6,34 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:07:23 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/13 15:40:19 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:52:44 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// convert ASCII string to integer
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	minus_counter;
+	int	sign;
 	int	result;
 
 	i = 0;
 	result = 0;
-	minus_counter = 0;
+	sign = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			minus_counter++;
+			sign = -1;
 		i++;
 	}
+	if (str[i] == '-' || str[i] == '+')
+		return (0);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	if (minus_counter % 2 == 0)
-		return (result);
-	else
-		return (-result);
+	return (result * sign);
 }

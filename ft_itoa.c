@@ -6,7 +6,7 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:28:56 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/23 14:33:50 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:58:33 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	*ft_itoa(int n)
 	}
 	temp = num;
 	len = get_num_len(temp) + is_minus;
-	result = (char *)malloc(sizeof(char) * (len + is_minus + 1));
+	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (!result)
 		return (NULL);
 	if (is_minus)
