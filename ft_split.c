@@ -6,7 +6,7 @@
 /*   By: dshvydka <dshvydka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:36:16 by dshvydka          #+#    #+#             */
-/*   Updated: 2024/10/25 16:59:49 by dshvydka         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:40:23 by dshvydka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,10 +71,9 @@ static char const	*get_next_word(char const *s, char c, int *len)
 
 char	**ft_split(char const *s, char c)
 {
-	int			split_index;
-	int			len;
-	char		**splits;
-	const char	*s;
+	int		split_index;
+	int		len;
+	char	**splits;
 
 	split_index = 0;
 	splits = malloc(sizeof(char *) * (count_words(s, c) + 1));
@@ -91,6 +90,7 @@ char	**ft_split(char const *s, char c)
 		}
 		split_index++;
 		s += len;
+		s = get_next_word(s, c, &len);
 	}
 	splits[split_index] = NULL;
 	return (splits);
